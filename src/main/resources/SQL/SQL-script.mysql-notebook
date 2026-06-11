@@ -2,7 +2,7 @@
     "type": "MySQLNotebook",
     "version": "1.0",
     "caption": "DB Notebook",
-    "content": "\\about\nCREATE DATABASE blog_app;\nUSE blog_app;\n\nCREATE TABLE articles (\n    id              INT PRIMARY KEY AUTO_INCREMENT,\n    title           VARCHAR(255) NOT NULL,\n    article         TEXT NOT NULL,\n    postTime        TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\nCREATE TABLE advertisement (\n    id          INT PRIMARY KEY AUTO_INCREMENT,\n    title       VARCHAR(255) NOT NULL,\n    adv         TEXT NOT NULL\n);\n\nUSE tasks;\nSELECT * FROM tasks;\nUSE blog_app;\nINSERT INTO articles(title,article)\nVALUES('test1','testarticle1'),\n        ('test2','testarticle2');\n\nSELECT * FROM articles;\n",
+    "content": "\\about\nCREATE DATABASE blog_app;\nUSE blog_app;\n\nCREATE TABLE articles (\n    id              INT PRIMARY KEY AUTO_INCREMENT,\n    title           VARCHAR(255) NOT NULL,\n    article         TEXT NOT NULL,\n    postTime        TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\nCREATE TABLE advertisement (\n    id          INT PRIMARY KEY AUTO_INCREMENT,\n    title       VARCHAR(255) NOT NULL,\n    adv         TEXT NOT NULL\n);\n\nUSE tasks;\nSELECT * FROM tasks;\nUSE blog_app;\nINSERT INTO articles(title,article)\nVALUES('test1','testarticle1'),\n        ('test2','testarticle2');\n\nSELECT * FROM articles;\n\n\n",
     "options": {
         "tabSize": 4,
         "indentSize": 4,
@@ -13,28 +13,28 @@
     "viewState": {
         "cursorState": [
             {
-                "inSelectionMode": true,
+                "inSelectionMode": false,
                 "selectionStart": {
-                    "lineNumber": 12,
-                    "column": 27
+                    "lineNumber": 28,
+                    "column": 1
                 },
                 "position": {
-                    "lineNumber": 12,
-                    "column": 14
+                    "lineNumber": 28,
+                    "column": 1
                 }
             }
         ],
         "viewState": {
             "scrollLeft": 0,
             "firstPosition": {
-                "lineNumber": 16,
+                "lineNumber": 18,
                 "column": 1
             },
-            "firstPositionDeltaTop": -23
+            "firstPositionDeltaTop": 4
         },
         "contributionsState": {
             "editor.contrib.folding": {},
-            "editor.contrib.wordHighlighter": true
+            "editor.contrib.wordHighlighter": false
         }
     },
     "contexts": [
@@ -103,7 +103,7 @@
                         }
                     ]
                 },
-                "currentHeight": 81.59375,
+                "currentHeight": 28,
                 "currentSet": 1,
                 "statements": [
                     {
@@ -195,7 +195,7 @@
                 "result": {
                     "type": "resultIds",
                     "list": [
-                        "e6f462e5-5535-42ad-99a9-363edf6499ad"
+                        "365f7dfb-e16e-4989-ab10-159ccc54f249"
                     ]
                 },
                 "currentHeight": 36,
@@ -214,8 +214,8 @@
             },
             "data": [
                 {
-                    "tabId": "5556cb14-4701-436e-c47e-d009b1b03d00",
-                    "resultId": "e6f462e5-5535-42ad-99a9-363edf6499ad",
+                    "tabId": "521de01f-8a0c-4d1e-b7d7-b8918d5b50ba",
+                    "resultId": "365f7dfb-e16e-4989-ab10-159ccc54f249",
                     "rows": [
                         {
                             "0": 16,
@@ -358,8 +358,8 @@
                         {
                             "type": 2,
                             "index": 0,
-                            "resultId": "a5e47906-d6ef-4a35-a158-ecbd09c83639",
-                            "content": "OK, 0 records retrieved in 3.025ms"
+                            "resultId": "eca1b16d-c5ea-4cc5-d2d7-20d38427c7f4",
+                            "content": "OK, 0 records retrieved in 3.892ms"
                         }
                     ]
                 },
@@ -428,10 +428,10 @@
                 "result": {
                     "type": "resultIds",
                     "list": [
-                        "19294132-99f1-4fd7-8a10-85ac8f03aaa0"
+                        "ed12bf6a-0fa7-4314-9f5c-ca10617956dd"
                     ]
                 },
-                "currentHeight": 36,
+                "currentHeight": 114.59375,
                 "currentSet": 1,
                 "statements": [
                     {
@@ -447,8 +447,8 @@
             },
             "data": [
                 {
-                    "tabId": "5556cb14-4701-436e-c47e-d009b1b03d00",
-                    "resultId": "19294132-99f1-4fd7-8a10-85ac8f03aaa0",
+                    "tabId": "521de01f-8a0c-4d1e-b7d7-b8918d5b50ba",
+                    "resultId": "ed12bf6a-0fa7-4314-9f5c-ca10617956dd",
                     "rows": [
                         {
                             "0": 1,
@@ -536,7 +536,7 @@
                         }
                     ],
                     "executionInfo": {
-                        "text": "OK, 2 records retrieved in 2.643ms"
+                        "text": "OK, 2 records retrieved in 22.263ms"
                     },
                     "totalRowCount": 2,
                     "hasMoreRows": false,
@@ -551,7 +551,7 @@
         {
             "state": {
                 "start": 26,
-                "end": 26,
+                "end": 28,
                 "language": "mysql",
                 "currentSet": 1,
                 "statements": [
@@ -559,10 +559,10 @@
                         "delimiter": ";",
                         "span": {
                             "start": 0,
-                            "length": 0
+                            "length": 2
                         },
-                        "contentStart": 0,
-                        "state": 0
+                        "contentStart": -1,
+                        "state": 3
                     }
                 ]
             },
